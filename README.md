@@ -1,5 +1,7 @@
 # fuji-app
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/screwdriver-cd/fuji-demo.svg)](https://greenkeeper.io/)
+
 Demo app that shows Flickr images of Mount Fuji in a slideshow. This app uses the Flickr API and Nodejs to display images from Flickr based on a keyword. It will also cover setting up a continuous integration/continuous delivery pipeline using [Screwdriver](https://screwdriver.cd) and Heroku.
 
 ## Prerequisites
