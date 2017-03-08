@@ -1,18 +1,18 @@
 workflow:
-    - publish
+    - deploy
 
 jobs:
     main:
         image: node:6
         steps:
-            - npm-install: cd app/ && npm install
-            - npm-test: npm test
-    publish:
+            - install-dependencies: npm install
+            - test: npm test
+    deploy:
         image: node:6
         steps:
             - install-dependencies: . ./bin/install.sh
-            - test: npm test && cd ..
-            - deploy-heroku: . ./bin/create_tarball.sh
+            - test: npm test
+            - heroku-deploy: . ./bin/heroku_deploy.sh
         secrets:
             - HEROKU_API_KEY
             - HEROKU_APP

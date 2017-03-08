@@ -3,7 +3,6 @@
 set -e
 
 echo "Install npm modules.."
-cd ./app
 npm install
 
 echo "Install jq.."
