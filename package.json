@@ -7,7 +7,7 @@
   "description": "Test app for Screwdriver",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/index.js",
+    "start": "node ./index.js",
     "test": "jenkins-mocha test/**"
   },
   "repository": {

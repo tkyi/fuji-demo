@@ -5,13 +5,13 @@ jobs:
     main:
         image: node:6
         steps:
-            - npm-install: cd app/ && npm install
+            - npm-install: npm install
             - npm-test: npm test
     publish:
         image: node:6
         steps:
             - install-dependencies: . ./bin/install.sh
-            - test: npm test && cd ..
+            - test: npm test
             - deploy-heroku: . ./bin/create_tarball.sh
         secrets:
             - HEROKU_API_KEY

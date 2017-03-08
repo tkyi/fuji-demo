@@ -50,13 +50,13 @@ You should be able to see your deployed application after the build is done runn
 Make a change to your code and push it to your branch. Screwdriver will detect the code change and automatically trigger a new build, causing your code change to go all the way to production!
 
 #### Ex: Change the Flickr tag
-Change the `tag` in line 5 of `app/lib/photos.js` from `mount fuji` to another monument. Push your changes to Github and navigate to your Screwdriver pipeline to see the change get deployed.
+Change the `tag` in line 5 of `./lib/photos.js` from `mount fuji` to another monument. Push your changes to Github and navigate to your Screwdriver pipeline to see the change get deployed.
 
 ## Local development
 To setup:
 ```bash
 $ git clone git@github.com:screwdriver-cd/fuji-demo.git
-$ cd fuji-demo/app/
+$ cd fuji-demo/
 $ npm install
 $ npm test      # to test locally
 $ npm start     # to start locally
