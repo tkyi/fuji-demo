@@ -10,7 +10,11 @@ describe('Photo list', function () {
 
     beforeEach(function () {
         requestMock = sinon.stub();
-        mockery.enable({useCleanCache: true});
+        mockery.enable({
+            useCleanCache: true,
+            warnOnReplace: false,
+            warnOnUnregistered: false
+        });
         mockery.registerMock('request', requestMock);
         mockery.registerAllowable('vm');
         mockery.registerAllowable(src, true);

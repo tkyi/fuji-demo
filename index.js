@@ -2,7 +2,7 @@
 var express = require('express'),
     app,
     photos = require('./lib/photos'),
-    exphbs = require('express3-handlebars');
+    exphbs = require('express-handlebars');
 
 process.chdir(__dirname);
 app = express();

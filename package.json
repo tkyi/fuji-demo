@@ -29,20 +29,21 @@
     "Dao Lam <daolam112@gmail.com>",
     "Darren Matsumoto <aeneascorrupt@gmail.com>",
     "Jeremiah Wuenschel <jeremiah.wuenschel@gmail.com>",
+    "Jerry Zhang <thejerryzhang@gmail.com>",
     "Min Zhang <minzhang@andrew.cmu.edu>",
-    "Noah Katzman <nbkatzman@gmail.com>",
     "Peter Peterson <jedipetey@gmail.com>",
+    "Reetika Rastogi <r3rastogi@gmail.com>",
     "St. John Johnson <st.john.johnson@gmail.com"
   ],
   "devDependencies": {
-    "chai": "~1.10.0",
-    "jenkins-mocha": "^3.0.0",
-    "mockery": "~1.4.0",
-    "sinon": "1.9.x"
+    "chai": "^3.5.0",
+    "jenkins-mocha": "^4.1.2",
+    "mockery": "^2.0.0",
+    "sinon": "^1.17.7"
   },
   "dependencies": {
     "express": "~3.5.0",
-    "request": "~2.34.0",
-    "express3-handlebars": "0.5.x"
+    "express-handlebars": "^3.0.0",
+    "request": "~2.34.0"
   }
 }
