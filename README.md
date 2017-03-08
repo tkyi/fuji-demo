@@ -1,12 +1,12 @@
-# fuji-demo
+# Fuji Demo
 
-Demo app that shows Flickr images of Mount Fuji in a slideshow. This app uses the Flickr API and Nodejs to display images from Flickr based on a keyword. It will also cover setting up a continuous integration/continuous delivery pipeline using [Screwdriver](https://screwdriver.cd) and Heroku.
+A simple demo app that shows Flickr images of Mount Fuji in a slideshow. This app uses the Flickr API and Nodejs to display images from Flickr based on a keyword. It will also cover setting up a Continuous Integration/Continuous Delivery pipeline using [Screwdriver](http://screwdriver.cd) and Heroku.
 
 ## Prerequisites
 - [Github](https://github.com) account
 - [Heroku](https://www.heroku.com) account
 
-## 1. Fork this repository and clone
+## 1. Fork and clone the repository
 Click on the Fork button on the top right of the [repository](https://github.com/screwdriver-cd/fuji-demo).
 
 ## 2. Set up your Screwdriver pipeline
@@ -14,15 +14,14 @@ In order to use Screwdriver, you will need to login to Screwdriver using Github 
 
 #### 1. Create a Screwdriver pipeline
 
-1. Go to [Screwdriver UI](https://cd.screwdriver.cd).
+1. Go to the [Screwdriver UI](https://cd.screwdriver.cd).
 
-2. Click on the Create icon. (You will be redirected to login if you have not already.)
+2. Click on the Create icon (you will be redirected to login if you have not already).
 
   - Click Login with SCM Provider.
-
   - You will be asked to give Screwdriver access to your repositories. Choose appropriately and click Authorize.
 
-4. Enter your repository link into the field. SSH or HTTPS link is fine, with #<YOUR_BRANCH_NAME> immediately after (ex: `git@github.com:{YOUR_GITHUB_USERNAME}/fuji-demo.git`). Click `Use this repository` to confirm and then click Create Pipeline. Keep note of your pipeline ID.
+4. Enter your repository link into the field. SSH or HTTPS link is fine, with #<YOUR_BRANCH_NAME> immediately after (ex: `git@github.com:{YOUR_GITHUB_USERNAME}/fuji-demo.git`). Click `Use this repository` to confirm and then click Create Pipeline. Make note of your pipeline ID.
 
 #### 2. Get Heroku Secrets
 In order to add the secrets needed for this app to deploy, you will need your Heroku API key and a Heroku app name.
