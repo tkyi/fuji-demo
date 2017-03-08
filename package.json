@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:screwdriver-cd/fuji-app.git"
+    "url": "git@github.com:screwdriver-cd/fuji-demo.git"
   },
-  "homepage": "https://github.com/screwdriver-cd/fuji-app",
-  "bugs": "https://github.com/screwdriver-cd/fuji-app/issues",
+  "homepage": "https://github.com/screwdriver-cd/fuji-demo",
+  "bugs": "https://github.com/screwdriver-cd/fuji-demo/issues",
   "keywords": [
     "fuji",
     "test",
