@@ -1,4 +1,4 @@
-# fuji-app
+# fuji-demo
 
 Demo app that shows Flickr images of Mount Fuji in a slideshow. This app uses the Flickr API and Nodejs to display images from Flickr based on a keyword. It will also cover setting up a continuous integration/continuous delivery pipeline using [Screwdriver](https://screwdriver.cd) and Heroku.
 
@@ -55,21 +55,10 @@ Change the `tag` in line 5 of `app/lib/photos.js` from `mount fuji` to another m
 ## Local development
 To setup:
 ```bash
-$ git clone git@github.com:screwdriver-cd/fuji-app.git
-$ cd fuji-app/app/
+$ git clone git@github.com:screwdriver-cd/fuji-demo.git
+$ cd fuji-demo/app/
 $ npm install
+$ npm test      # to test locally
+$ npm start     # to start locally
 ```
-### Running
-To start:
-```bash
-$ cd fuji-app/app/
-$ npm start
-```
-Navigate to http://localhost:7000.
-
-### Testing
-To test:
-```bash
-$ cd fuji-app/app/
-$ npm test
-```
+Navigate to http://localhost:7000 to see the app.
