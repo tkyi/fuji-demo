@@ -1,4 +1,4 @@
-# Fuji Demo
+# Fuji Demo Meow
 
 A simple demo app that shows Flickr images of Mount Fuji in a slideshow. This app uses the Flickr API and Nodejs to display images from Flickr based on a keyword. It will also cover setting up a Continuous Integration/Continuous Delivery pipeline using [Screwdriver](http://screwdriver.cd) and Heroku.
 
