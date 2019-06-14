@@ -1,14 +1,13 @@
-workflow:
-    - deploy
-
 jobs:
     main:
-        image: node:6
+        requires: [~commit, ~pr, ~sd@113:main]
+        image: node:8
         steps:
             - install-dependencies: npm install
             - test: npm test
     deploy:
-        image: node:6
+        requires: [main]
+        image: node:8
         steps:
             - install-dependencies: . ./bin/install.sh
             - test: npm test
